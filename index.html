@@ -4,8 +4,581 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css files -->
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/stylesForHeader.css" />
+    <link rel="stylesheet" href="style/stylesForHome.css" />
+    <link rel="stylesheet" href="style/stylesForAbout.css" />
+    <link rel="stylesheet" href="style/styleForService.css" />
+    <link rel="stylesheet" href="style/styleProtpolio.css" />
+    <link rel="stylesheet" href="style/styleContact.css" />
+    <link rel="stylesheet" href="style/manAnimation.css" />
+
+    <!-- <link rel="stylesheet" href="../style" /> -->
   </head>
   <body>
-    <h1>hirak roy</h1>
+    <div class="mainContainer" id="Home">
+      <header>
+        <main>
+          <div class="logoContainer" style="max-width: 150px">
+            <img
+              src="photos/logoo.png"
+              alt=""
+              style="width: 100%; height: 100%"
+            />
+            <!-- <h1><span style="color: antiquewhite">R</span>oy...</h1> -->
+            <!-- <p>Full stack developer</p> -->
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a
+                  href="#Home"
+                  id="homeNvigation"
+                  onclick="navBarATagOnClick(this)"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#About"
+                  id="aboutNvigation"
+                  onclick="navBarATagOnClick(this)"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#Service"
+                  id="serviceNvigation"
+                  onclick="navBarATagOnClick(this)"
+                  >Service</a
+                >
+              </li>
+              <li>
+                <a
+                  id="protfolioNvigation"
+                  href="#Portfolio"
+                  onclick="navBarATagOnClick(this)"
+                  >Portfolio
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#Contact"
+                  id="contactNvigation"
+                  onclick="navBarATagOnClick(this)"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <div class="resumeButtonContainer">
+              <button>
+                <div>Resume</div>
+                <div style="width: 30px">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    id="down-arrow"
+                  >
+                    <path
+                      fill="red"
+                      d="m7.293 12.707 4 4a1.004 1.004 0 0 0 1.414 0l4-4a1 1 0 0 0-1.414-1.414L13 13.586V8a1 1 0 0 0-2 0v5.586l-2.293-2.293a1 1 0 0 0-1.414 1.414Z"
+                    ></path>
+                    <path
+                      fill="yellow"
+                      d="M12 22A10 10 0 1 0 2 12a10.011 10.011 0 0 0 10 10ZM7.293 11.293a1 1 0 0 1 1.414 0L11 13.586V8a1 1 0 0 1 2 0v5.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-4 4a1.004 1.004 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </nav>
+        </main>
+      </header>
+      <div class="routeContainer">
+        <div id="HomeContainer">
+          <main>
+            <section class="textInformation">
+              <h3 style="font-weight: 600">Fullstack developer</h3>
+              <div class="nameAndCountryContainer">
+                <h1 id="nameandCountry" style="color: #ffff; font-weight: 400">
+                  Hi! I'm Hirak Roy, from INDIA.
+                </h1>
+
+                <div style="max-width: 50px">
+                  <img
+                    src="photos/india-flag (1).svg"
+                    alt="indian flag svg"
+                    style="width: 100%; height: 100%"
+                  />
+                </div>
+              </div>
+              <h5 id="welcomeToMyPage">Welcome to my page.....</h5>
+
+              <div class="linkedinConnect">
+                <p>Contact me</p>
+                <button>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/royhirakp/"
+                  >
+                    <svg
+                      viewBox="55.005 23.8289 333.061 333.0491"
+                      width="35"
+                      height="35"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        id="Path_2520"
+                        data-name="Path 2520"
+                        d="M 338.789 307.609 L 289.44 307.609 L 289.44 230.326 C 289.44 211.898 289.111 188.174 263.773 188.174 C 238.07 188.174 234.138 208.253 234.138 228.985 L 234.138 307.604 L 184.788 307.604 L 184.788 148.679 L 232.164 148.679 L 232.164 170.398 L 232.827 170.398 C 242.491 153.881 260.452 144.017 279.57 144.726 C 329.587 144.726 338.809 177.626 338.809 220.426 L 338.789 307.609 Z M 129.106 126.955 C 107.063 126.96 93.281 103.098 104.298 84.006 C 115.319 64.909 142.877 64.909 153.904 83.996 C 156.418 88.35 157.739 93.29 157.739 98.312 C 157.744 114.13 144.923 126.955 129.106 126.955 M 153.781 307.609 L 104.38 307.609 L 104.38 148.679 L 153.781 148.679 L 153.781 307.609 Z M 363.391 23.851 L 79.582 23.851 C 66.17 23.702 55.169 34.446 55.005 47.858 L 55.005 332.844 C 55.164 346.266 66.165 357.02 79.582 356.876 L 363.391 356.876 C 376.839 357.046 387.881 346.292 388.066 332.844 L 388.066 47.837 C 387.876 34.4 376.834 23.656 363.391 23.831"
+                        fill="#0b65c2"
+                        transform="matrix(1, 0, 0, 1, -7.105427357601002e-15, -3.552713678800501e-15)"
+                      ></path>
+                    </svg>
+                  </a>
+                </button>
+              </div>
+            </section>
+            <section class="imageContainerSectionTag">
+              <div class="imageContainer">
+                <img
+                  style="height: 100%; width: 100%"
+                  src="photos/mostnew.png"
+                  alt=""
+                />
+              </div>
+            </section>
+          </main>
+        </div>
+        <!-- code for About -->
+
+        <div id="About">
+          <main>
+            <section class="aboutSectionAnimation">
+              <div class="containerrr">
+                <div class="face">
+                  <div class="heair heair-1"></div>
+                  <div class="heair heair-2"></div>
+                  <div class="heair heair-3"></div>
+                  <div class="heair heair-4"></div>
+                  <div class="earleft">
+                    <div class="earleftLine"></div>
+                  </div>
+                  <div class="earright">
+                    <div class="earrightLine"></div>
+                  </div>
+                  <div class="glasses">
+                    <div class="glassLeft">
+                      <div class="leftEye"></div>
+                    </div>
+                    <div class="glassJoint"></div>
+                    <div class="glassRight">
+                      <div class="rightEye"></div>
+                    </div>
+                  </div>
+                  <div class="nose">
+                    <div class="nosehole nosehole1"></div>
+                    <div class="nosehole nosehole2"></div>
+                  </div>
+                  <div class="mouth"></div>
+                </div>
+                <div class="objectBody">
+                  <div class="pocket"></div>
+                  <div class="leftHand">
+                    <div class="animatedhand">
+                      <div class="plam">
+                        <div class="fingers1"></div>
+                        <div class="fingers2"></div>
+                        <div class="fingers3"></div>
+                        <div class="fingers4"></div>
+                        <div class="fingers5"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rightHand"></div>
+                </div>
+                <div class="hiiMessege">
+                  <h4>
+                    Hello! Welcome to the page. It's created using raw HTML,
+                    CSS, and JavaScript.
+                  </h4>
+                </div>
+                <div class="textContent">
+                  <h4>Nextjs</h4>
+                  <h4>Redux</h4>
+                  <h4>React</h4>
+                  <h4>MongoDb</h4>
+                  <h4>SQL</h4>
+                  <h4>Nestjs</h4>
+                  <h4>Express</h4>
+                  <h4>nodejs</h4>
+                </div>
+              </div>
+            </section>
+            <section class="myselfSection">
+              <h1>My Self</h1>
+              <p>
+                An ambitious individual who is good at problem-solving and
+                programming, with an emphasis on writing clean and maintainable
+                code. Experienced with data structures/algorithms and designing
+                optimal solutions, aspiring to make a career in software
+                engineering with a focus on full-stack development
+              </p>
+              <div>
+                <div class="listofmyInfo">
+                  <ul>
+                    <li id="skills" onclick="showMyInfo(`Skills`)">Skills</li>
+                    <li onclick="showMyInfo(`Experience`)">Experience</li>
+                    <li onclick="showMyInfo(`Education`)">Education</li>
+                  </ul>
+                </div>
+
+                <div id="displayMySelf">
+                  <ul>
+                    <li>
+                      <h5 style="color: #e4dbdb">
+                        <strong class="mainSlikkMERNstack"> MERN Stack </strong
+                        >, Html, Css, JavaScript
+                      </h5>
+                    </li>
+                    <li>
+                      <h5>
+                        NextJs, Redux, Material UI,and other libraries for the
+                        frontend
+                      </h5>
+                    </li>
+                    <li>
+                      <h5>Typescript, Nestjs, SQL, Git, postman</h5>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </main>
+        </div>
+        <!-- code for serviceeee -->
+
+        <div id="Service">
+          <main>
+            <h1>Services:</h1>
+          </main>
+          <main>
+            <div class="serviceCardContainer">
+              <div>
+                <h2>Frontend</h2>
+                <p>
+                  Technologies: Next.js, React.js, Redux, HTML, CSS, JavaScript,
+                  Material UI, Tailwind, Bootstrap,
+                </p>
+              </div>
+            </div>
+            <div class="serviceCardContainer">
+              <div>
+                <h2>BackEnd</h2>
+                <p>Technologies: Express.js. Mongodb, SQL, Nestjs</p>
+              </div>
+            </div>
+          </main>
+        </div>
+
+        <div id="Portfolio">
+          <main>
+            <div>
+              <h1>Portfolio</h1>
+            </div>
+            <div class="protpolioCradContainer">
+              <div class="card">
+                <div class="content">
+                  <div class="back">
+                    <div class="back-content">
+                      <div
+                        style="
+                          background: url(photos/mostnew.png);
+                          width: 100%;
+                          height: 100%;
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          cursor: pointer;
+                        "
+                      >
+                        <h2>Project name</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="front">
+                    <div class="img">
+                      <div class="circle"></div>
+                      <div class="circle" id="right"></div>
+                      <div class="circle" id="bottom"></div>
+                    </div>
+                    <div style="opacity: 1; position: relative; z-index: 3">
+                      <p>
+                        about the project:text in formation about the project,
+                        technoloy used
+                      </p>
+                      <button>click</button>
+                      <a href="####"> git hub link, hosting link </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                  <div class="back">
+                    <div class="back-content">
+                      <div
+                        style="
+                          background: url(photos/mostnew.png);
+                          width: 100%;
+                          height: 100%;
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          cursor: pointer;
+                        "
+                      >
+                        <h2>Project name</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="front">
+                    <div class="img">
+                      <div class="circle"></div>
+                      <div class="circle" id="right"></div>
+                      <div class="circle" id="bottom"></div>
+                    </div>
+                    <div style="opacity: 1; position: relative; z-index: 3">
+                      <p>
+                        about the project:text in formation about the project,
+                        technoloy used
+                      </p>
+                      <button>click</button>
+                      <a href="####"> git hub link, hosting link </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                  <div class="back">
+                    <div class="back-content">
+                      <div
+                        style="
+                          background: url(photos/mostnew.png);
+                          width: 100%;
+                          height: 100%;
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          cursor: pointer;
+                        "
+                      >
+                        <h2>Project name</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="front">
+                    <div class="img">
+                      <div class="circle"></div>
+                      <div class="circle" id="right"></div>
+                      <div class="circle" id="bottom"></div>
+                    </div>
+                    <div style="opacity: 1; position: relative; z-index: 3">
+                      <p>
+                        about the project:text in formation about the project,
+                        technoloy used
+                      </p>
+                      <button>click</button>
+                      <a href="####"> git hub link, hosting link </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <button>see more</button>
+          </main>
+        </div>
+        <div id="Contact">
+          <main>
+            <h1>Contact</h1>
+            <div class="contactSectionContainer">
+              <section>
+                <a
+                  href="mailto:hirakroy@mail.com"
+                  class="contactDetailsLinkTagContainer"
+                >
+                  <div class="IconContainerr">
+                    <img
+                      src="photos/mail-svgrepo-com.svg"
+                      alt=""
+                      style="width: 100%; height: 100%"
+                    />
+                  </div>
+                  <p>hirakroy@mail.com</p>
+                </a>
+
+                <a
+                  href="whatsapp://send?phone=+919002297603"
+                  class="contactDetailsLinkTagContainer"
+                >
+                  <div class="IconContainerr">
+                    <img
+                      src="photos/whatsapp-svgrepo-com.svg"
+                      alt=""
+                      style="width: 100%; height: 100%"
+                    />
+                  </div>
+                  <p>+91-9002297603</p>
+                </a>
+
+                <a
+                  href="skype:live:royhirakp?call"
+                  class="contactDetailsLinkTagContainer"
+                >
+                  <div class="IconContainerr" style="position: relative">
+                    <div
+                      style="
+                        width: 25px;
+                        height: 28px;
+                        background: #ffff;
+                        position: absolute;
+                        z-index: 1;
+                        top: 5px;
+                        left: 6px;
+                      "
+                    >
+                      <!-- dds -->
+                    </div>
+                    <img
+                      src="photos/skype-color-svgrepo-com.svg"
+                      alt=""
+                      style="
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                        z-index: 2;
+                      "
+                    />
+                  </div>
+                  <p>live:royhirakp</p>
+                </a>
+
+                <div>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/royhirakp/"
+                    style="padding-right: 20px"
+                  >
+                    <div
+                      class="IconContainerr"
+                      style="position: relative; width: 45px; height: 45px"
+                    >
+                      <div
+                        class="SkypeLinkedSVgBaground"
+                        style="top: 8px; left: 8px; width: 27px; height: 29px"
+                      ></div>
+                      <img
+                        src="photos/linkedin-svgrepo-com.svg"
+                        alt=""
+                        style="position: relative; z-index: 2"
+                      />
+                    </div>
+                  </a>
+                  <a href="https://github.com/royhirakp" target="_blank">
+                    <div class="IconContainerr" style="position: relative">
+                      <img src="photos/github-142-svgrepo-com (1).svg" alt="" />
+                    </div>
+                  </a>
+                </div>
+              </section>
+              <section>
+                <div class="form-container">
+                  <form action="" class="form">
+                    <div class="inputContainer">
+                      <label for="name">Name</label>
+                      <input
+                        placeholder="Name"
+                        type="text"
+                        name="name"
+                        id="name"
+                      />
+                    </div>
+                    <div class="inputContainer">
+                      <label for="email">Email</label>
+                      <input
+                        placeholder="Email.."
+                        type="email"
+                        name="email"
+                        id="email"
+                      />
+                    </div>
+                    <div class="inputContainer">
+                      <label for="message">message</label>
+                      <textarea
+                        placeholder="Type your Message here..."
+                        name="message"
+                        id="message"
+                        cols="20"
+                        rows="10"
+                        required=""
+                      ></textarea>
+                    </div>
+                    <div class="submitButtionCotainer">
+                      <input type="submit" name="submit" id="" />
+                    </div>
+                  </form>
+                </div>
+              </section>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <div class="horizentalLineContainer">
+      <div style="max-width: 1200px; padding: 10px 8px 0px 8px; margin: auto">
+        <p
+          style="
+            font-weight: 500;
+            font-size: x-small;
+            text-align: center;
+            color: #ffff;
+            margin: 0;
+            padding: 10px 0;
+          "
+        >
+          **Note: created only with HTML, CSS, and JavaScript.
+        </p>
+        <hr style="margin: 0" />
+      </div>
+    </div>
+
+    <div class="copyWriteContainer">
+      <p
+        style="
+          font-weight: 500;
+          font-size: small;
+          text-align: center;
+          color: #ffff;
+          margin: 0;
+          padding: 23px 0;
+        "
+      >
+        © Copyright 2024. by Hirak Roy
+      </p>
+    </div>
+
+    <script src="script/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,43 @@
+h1 {
+  color: red;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color: black; */
+  color: red;
+  font-family: "Montserrat", sans-serif;
+  background: url(../public/BagroundImagee.png);
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: 200px 100px;
+}
+.mainContainer {
+}
+
+/* css for routes container  */
+.routeContainer div {
+}
+
+.routeContainer div main {
+  max-width: 1200px;
+  margin: auto;
+  /* border: 1px solid; */
+}
+
+/* add baground color  */
+
+.routeContainer #HomeContainer,
+#About,
+#Portfolio,
+#Contact,
+.horizentalLineContainer,
+.copyWriteContainer {
+  background-color: black;
+}
