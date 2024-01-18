@@ -29,7 +29,7 @@
 /* css for the form */
 
 .form-container {
-  width: 400px;
+  max-width: 400px;
   background: linear-gradient(#212121, #212121) padding-box,
     linear-gradient(195deg, transparent 35%, #e81cff, #40c9ff) border-box;
   border: 2px solid transparent;
@@ -157,4 +157,30 @@ div.SkypeLinkedSVgBaground {
   z-index: 1;
   top: 5px;
   left: 6px;
+}
+@media screen and (max-width: 700px) {
+  #Contact {
+    padding: 0;
+  }
+  #Contact main div.contactSectionContainer {
+    flex-direction: column;
+  }
+  #Contact main div.contactSectionContainer section {
+    display: flex;
+    justify-content: center;
+    padding: 1.5em 0;
+  }
+  #Contact main h1 {
+    font-size: 25px;
+  }
+  div.contactSectionContainer section:first-child {
+    /* border: 1px solid #8f2121; */
+  }
+  .contactDetailsLinkTagContainer {
+    /* justify-content: center; */
+    padding-left: 10%;
+  }
+  .linkedAndGithub {
+    padding-left: 10%;
+  }
 }

@@ -128,7 +128,7 @@ function showMyInfo(route) {
       
   
       <li>
-        <h5 style="width:464px;">
+        <h5 style="">
           I may not have prior experience in web development, as I
           come from a different background. However, I have acquired
           the necessary technologies that are industry-tested and can
@@ -144,13 +144,13 @@ function showMyInfo(route) {
       <ul>
      
       <li>
-      <h5 style="width:464px;">
+      <h5 style="">
           Bachelor of Technology in Electrical Engineering; MAKAUT,
           West Bengal(2020)
         </h5>
       </li>
       <li>
-      <h5 style="width:464px;">
+      <h5 style="">
           Completed a 6-month full-stack course on the MERN stack; 10X
           Academy(diploma)
         </h5>

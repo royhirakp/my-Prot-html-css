@@ -52,6 +52,21 @@ section.myselfSection p::first-letter {
 
 .listofmyInfo ul li {
 }
+.myselfSection h1 {
+  /* padding-bottom: 20px; */
+}
+.listofmyInfo ul {
+  margin-left: 15px;
+  padding: 1em 0 0.5em 0;
+  /* width: 8%; */
+}
+#displayMySelf > ul {
+  padding-left: 1.4em;
+}
+#displayMySelf ul li {
+  color: #ffff;
+  width: 90%;
+}
 
 /* hover effets on buttons or list item */
 
@@ -135,4 +150,44 @@ div#displayMySelf:hover {
 }
 .fade-out {
   opacity: 0.05;
+}
+
+@media screen and (max-width: 700px) {
+  #About main {
+    height: 900px;
+    flex-direction: column;
+  }
+  .myselfSection {
+  }
+  .aboutSectionAnimation {
+    padding: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .myselfSection h1 {
+    font-size: 19px;
+  }
+  section.myselfSection p {
+    font-size: 13px;
+    line-height: 17px;
+    /* padding-left: 5%; */
+  }
+  .listofmyInfo ul {
+    padding: 2em 0 1em 0;
+    /* width: 8%; */
+  }
+  .listofmyInfo ul li {
+    font-size: 15px;
+  }
+  div#displayMySelf {
+    height: 230px;
+  }
+  #displayMySelf > ul {
+    padding-left: 3em;
+  }
+  #displayMySelf ul li {
+    color: #ffff;
+    line-height: 25px;
+    width: 95%;
+  }
 }

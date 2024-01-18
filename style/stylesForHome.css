@@ -24,21 +24,22 @@ section {
 }
 .textInformation h3 {
   margin: 0;
+  padding-bottom: 1em;
 }
 .nameAndCountryContainer {
   display: flex;
   flex-direction: row;
-  /* border: 1px solid; */
   justify-content: space-between;
   width: 425px;
-  /* gap: 1px; */
 }
 .nameAndCountryContainer h1 {
-  padding: 5px 0;
+  /* padding: 1px 0; */
 }
 
 /* css for linked in connt buttonnn */
 div.linkedinConnect {
+  padding-top: 2em;
+
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -152,4 +153,52 @@ h5#welcomeToMyPage {
   to {
     transform: translateX(0);
   }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    /* border: 10px solid; */
+  }
+  header main nav {
+    display: none;
+  }
+  div#HomeContainer main {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  div#HomeContainer main section.imageContainerSectionTag {
+    width: 100%;
+  }
+  div#HomeContainer main section.textInformation {
+    margin-left: 0em;
+    padding-top: 2em;
+    align-self: baseline;
+    width: 100%;
+  }
+  .nameAndCountryContainer {
+    max-width: 260px;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .textInformation h3 {
+    font-size: 18px;
+  }
+  .textInformation h1 {
+    font-size: 15px;
+  }
+  .textInformation p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 899px) {
+  /* Styles for tablet devices */
+  body {
+    /* border: 10px solid blue; */
+  }
+
+  /* Add more styles as needed for tablets */
 }

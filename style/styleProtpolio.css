@@ -7,12 +7,13 @@
 }
 .protpolioCradContainer {
   display: flex;
+  flex-wrap: wrap;
   gap: 1em;
   padding: 0 10px;
 }
 .card {
   overflow: visible;
-  width: 290px;
+  min-width: 270px;
   height: 254px;
 }
 
@@ -193,5 +194,26 @@
 
   100% {
     transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #Portfolio {
+  }
+  #Portfolio main div h1 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .protpolioCradContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    padding: 0 10px;
+  }
+  div.protpolioCradContainer .card {
+    max-width: 100px;
+  }
+  .card {
   }
 }

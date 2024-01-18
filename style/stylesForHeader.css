@@ -114,3 +114,21 @@ header nav .resumeButtonContainer button:hover {
   /* border: 1px solid red; */
   transform: scale(1.05);
 }
+
+@media screen and (max-width: 700px) {
+  body {
+    /* border: 10px solid; */
+  }
+  header main nav {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 899px) {
+  /* Styles for tablet devices */
+  body {
+    /* border: 10px solid blue; */
+  }
+
+  /* Add more styles as needed for tablets */
+}

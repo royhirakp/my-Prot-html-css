@@ -13,7 +13,7 @@ body {
   /* background-color: black; */
   color: red;
   font-family: "Montserrat", sans-serif;
-  background: url(../public/BagroundImagee.png);
+  background: url(../photos/BagroundImagee.png);
   background-attachment: fixed;
   background-position: center center;
   background-size: 200px 100px;
