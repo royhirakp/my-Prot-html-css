@@ -12,7 +12,11 @@ header main {
   max-width: 1200px;
   margin: auto;
   /* border: 1px solid; */
+  padding: 4px 20px;
   overflow: auto;
+}
+.logoContainer {
+  max-width: 90px;
 }
 header div {
   float: left;
@@ -29,6 +33,7 @@ header nav {
 header nav ul {
   display: inline-block;
   padding: 0;
+  margin-right: 44px;
 }
 
 #homeNvigation {
@@ -120,11 +125,18 @@ header nav .resumeButtonContainer a:hover {
 .menuiconContainer,
 .closeIcon {
   display: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 760px) {
   body {
     /* border: 10px solid; */
+  }
+  header main {
+    padding: 4px 20px;
+  }
+  .logoContainer {
+    max-width: 60px;
   }
   header main nav {
     /* display: block; */
@@ -157,15 +169,17 @@ header nav .resumeButtonContainer a:hover {
   }
   .menuiconContainer {
     float: right;
-    padding: 30px 10px 30px 0;
+    padding: 10px 0px 10px 0;
   }
   .closeIcon {
-    width: 100%;
     display: flex;
     justify-content: start;
     position: absolute;
-    top: 0;
+    top: 8px;
     cursor: pointer;
+    width: 23px;
+    height: 45px;
+    left: 11px;
   }
 }
 

@@ -20,8 +20,9 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 30px;
-  padding-left: 20%;
+  /* padding: 30px; */
+  /* padding-left: 20%; */
+  align-items: center;
 }
 .contactSectionContainer {
   padding: 0 10px;
@@ -123,6 +124,7 @@
 }
 
 a.contactDetailsLinkTagContainer {
+  min-width: 254px;
   display: flex;
   /* justify-content: center; */
   gap: 20px;
@@ -135,9 +137,20 @@ a.contactDetailsLinkTagContainer :hover {
   text-decoration: underline;
   color: rgb(170, 170, 234);
 }
-.IconContainerr {
+.IconContainerr,
+.IconContainerrLinkedin {
   width: 40px;
   height: 40px;
+  position: relative;
+}
+.IconContainerr div {
+  width: 25px;
+  height: 28px;
+  background: #ffff;
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+  left: 6px;
 }
 .IconContainerr img {
   width: 100%;
@@ -147,16 +160,25 @@ a.contactDetailsLinkTagContainer :hover {
 a.contactDetailsLinkTagContainer p {
   margin: 0;
 }
-
-div.SkypeLinkedSVgBaground {
+.linkedAndGithub {
+  min-width: 254px;
+}
+.IconContainerrLinkedin div.SkypeLinkedSVgBaground {
   width: 28px;
-  height: 30px;
   background: #ffff;
   color: red;
   position: absolute;
   z-index: 1;
   top: 5px;
   left: 6px;
+  top: 8px;
+  left: 8px;
+  width: 27px;
+  height: 29px;
+  top: 8px;
+  left: 8px;
+  width: 27px;
+  height: 29px;
 }
 @media screen and (max-width: 700px) {
   #Contact {
@@ -182,5 +204,32 @@ div.SkypeLinkedSVgBaground {
   }
   .linkedAndGithub {
     padding-left: 10%;
+  }
+  a.contactDetailsLinkTagContainer p {
+    margin: 0;
+    font-size: 12px;
+  }
+  .IconContainerr {
+    width: 27px;
+    height: 27px;
+  }
+  .IconContainerrLinkedin {
+    width: 27px;
+    height: 27px;
+  }
+  .IconContainerr div {
+    width: 16px;
+    height: 18px;
+  }
+  div.SkypeLinkedSVgBaground {
+    background: #ffff;
+    color: red;
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    top: 8px;
+    left: 5px;
+    width: 16px;
+    height: 14px;
   }
 }

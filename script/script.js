@@ -34,41 +34,40 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementsByTagName("header")[0].style.backgroundColor =
         "#3c3c3c";
     }
-    console.log(scrollPercentage);
+    // console.log(scrollPercentage);
 
-    if (scrollPercentage < 300) {
+    if (scrollPercentage < 400) {
       // home
       document.getElementById("homeNvigation").style.color = "red";
       document.getElementById("aboutNvigation").style.color = "#ffff";
       document.getElementById("serviceNvigation").style.color = "#ffff";
       document.getElementById("protfolioNvigation").style.color = "#ffff";
       document.getElementById("contactNvigation").style.color = "#ffff";
-
       // console.log(document.getElementById("homeNvigation"));
     }
 
-    if (scrollPercentage > 300 && scrollPercentage < 750) {
+    if (scrollPercentage > 400 && scrollPercentage < 870) {
       document.getElementById("homeNvigation").style.color = "#ffff";
       document.getElementById("aboutNvigation").style.color = "red";
       document.getElementById("serviceNvigation").style.color = "#ffff";
       document.getElementById("protfolioNvigation").style.color = "#ffff";
       document.getElementById("contactNvigation").style.color = "#ffff";
     }
-    if (scrollPercentage > 750 && scrollPercentage < 1090) {
+    if (scrollPercentage > 871 && scrollPercentage < 1403) {
       document.getElementById("homeNvigation").style.color = "#ffff";
       document.getElementById("aboutNvigation").style.color = "#ffff";
       document.getElementById("serviceNvigation").style.color = "red";
       document.getElementById("protfolioNvigation").style.color = "#ffff";
       document.getElementById("contactNvigation").style.color = "#ffff";
     }
-    if (scrollPercentage > 1090 && scrollPercentage < 1147) {
+    if (scrollPercentage > 1404 && scrollPercentage < 1800) {
       document.getElementById("homeNvigation").style.color = "#ffff";
       document.getElementById("aboutNvigation").style.color = "#ffff";
       document.getElementById("serviceNvigation").style.color = "#ffff";
       document.getElementById("protfolioNvigation").style.color = "red";
       document.getElementById("contactNvigation").style.color = "#ffff";
     }
-    if (scrollPercentage > 1147 && scrollPercentage < 2000) {
+    if (scrollPercentage > 1801 && scrollPercentage < 6000) {
       document.getElementById("homeNvigation").style.color = "#ffff";
       document.getElementById("aboutNvigation").style.color = "#ffff";
       document.getElementById("serviceNvigation").style.color = "#ffff";
@@ -183,3 +182,36 @@ function openSlider() {
 
   navelement.style.right = "0px";
 }
+
+//     from sumit
+// function fromSubmit(e) {
+//   e.preventDefault();
+//   console.log("hdhdhhd");
+// }
+
+console.log(document.getElementsByClassName("form")[0]);
+
+document.getElementsByClassName("form")[0].addEventListener("submit", (e) => {
+  e.preventDefault();
+  // console.log("submiteddd", e);
+  // Get form data
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+
+  console.log("Name:", name);
+  console.log("Email:", email);
+  console.log("Message:", message);
+
+  fetch("")
+    .then((res) => res)
+    .then((data) => {
+      console.log("Name:", name);
+      console.log("Email:", email);
+      console.log("Message:", message);
+      console.log(data);
+    })
+    .catch((err) => {
+      console.log("errrrr===", err);
+    });
+});
