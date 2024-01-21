@@ -159,9 +159,7 @@ h5#welcomeToMyPage {
   body {
     /* border: 10px solid; */
   }
-  header main nav {
-    display: none;
-  }
+
   div#HomeContainer main {
     display: flex;
     flex-direction: column-reverse;

@@ -23,6 +23,8 @@ header nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* position: fixed; */
+  z-index: 500;
 }
 header nav ul {
   display: inline-block;
@@ -73,10 +75,10 @@ header nav .resumeButtonContainer {
   padding: 6px 10px;
   float: right;
 }
-header nav .resumeButtonContainer button {
+header nav .resumeButtonContainer a {
   background-color: black;
   border: 2px solid;
-  border-radius: 18px;
+  border-radius: 22px;
   padding: 2px 10px;
   color: #ffff;
   width: 9em;
@@ -93,7 +95,7 @@ header nav .resumeButtonContainer button {
   z-index: 1;
   /* box-shadow: 1px 1px 1px #c5c5c5, -6px -6px 12px #ffffff; */
 }
-header nav .resumeButtonContainer button::before {
+header nav .resumeButtonContainer a::before {
   content: "";
   width: 0;
   height: 3em;
@@ -106,21 +108,64 @@ header nav .resumeButtonContainer button::before {
   display: block;
   z-index: -1;
 }
-header nav .resumeButtonContainer button:hover::before {
+header nav .resumeButtonContainer a:hover::before {
   /* border: 1px solid red; */
   width: 9em;
 }
-header nav .resumeButtonContainer button:hover {
+header nav .resumeButtonContainer a:hover {
   /* border: 1px solid red; */
   transform: scale(1.05);
 }
 
-@media screen and (max-width: 700px) {
+.menuiconContainer,
+.closeIcon {
+  display: none;
+}
+
+@media screen and (max-width: 760px) {
   body {
     /* border: 10px solid; */
   }
   header main nav {
-    display: none;
+    /* display: block; */
+    /* display: none; */
+    margin-top: 0;
+    padding-top: 25px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: -200px;
+    /* right: -200px; */
+    width: 200px;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #4e4747;
+    transition: all 0.5s;
+  }
+  header main nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 50px;
+  }
+  header main nav ul li {
+    display: block;
+  }
+  .menuiconContainer {
+    display: block;
+  }
+  .menuiconContainer {
+    float: right;
+    padding: 30px 10px 30px 0;
+  }
+  .closeIcon {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
   }
 }
 

@@ -29,16 +29,25 @@
     <div class="mainContainer" id="Home">
       <header>
         <main>
-          <div class="logoContainer" style="max-width: 150px">
+          <div class="logoContainer" style="max-width: 80px">
             <img
               src="photos/logoo.png"
               alt=""
               style="width: 100%; height: 100%"
             />
-            <!-- <h1><span style="color: antiquewhite">R</span>oy...</h1> -->
-            <!-- <p>Full stack developer</p> -->
+          
           </div>
+          <div class="menuiconContainer" onclick="openSlider()">
+            <img src="photos/menuIconForMobile.svg" alt="">
+          </div>
+
           <nav>
+            <div title="close button" class="closeIcon" onclick="closeSlider()">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                <path fill="#F44336" d="M21.5 4.5H26.501V43.5H21.5z" transform="rotate(45.001 24 24)"></path><path fill="#F44336" d="M21.5 4.5H26.5V43.501H21.5z" transform="rotate(135.008 24 24)"></path>
+                </svg>
+              
+            </div>
             <ul>
               <li>
                 <a
@@ -82,7 +91,7 @@
               </li>
             </ul>
             <div class="resumeButtonContainer">
-              <button>
+              <a download href="Hirak's Resume.pdf">
                 <div>Resume</div>
                 <div style="width: 30px">
                   <svg
@@ -100,9 +109,12 @@
                     ></path>
                   </svg>
                 </div>
-              </button>
+              </a>
             </div>
+        
+           
           </nav>
+         
         </main>
       </header>
       <div class="routeContainer">

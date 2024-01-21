@@ -170,3 +170,16 @@ function showMyInfo(route) {
     } else item.style.color = "yellow";
   });
 }
+
+// logic for close the slider
+function closeSlider() {
+  let navelement = document.querySelector("header main nav");
+
+  navelement.style.right = "-200px";
+}
+
+function openSlider() {
+  let navelement = document.querySelector("header main nav");
+
+  navelement.style.right = "0px";
+}
