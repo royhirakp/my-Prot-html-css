@@ -193,25 +193,40 @@ console.log(document.getElementsByClassName("form")[0]);
 
 document.getElementsByClassName("form")[0].addEventListener("submit", (e) => {
   e.preventDefault();
-  // console.log("submiteddd", e);
-  // Get form data
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-  var message = document.getElementById("message").value;
+  document.getElementById("loader").style.display = "block";
+  document.getElementsByClassName("form")[0].style.opacity = 0.1;
 
-  console.log("Name:", name);
-  console.log("Email:", email);
-  console.log("Message:", message);
+  const jsonData = {
+    name: e.target.elements.name.value,
+    email: e.target.elements.email.value,
+    message: e.target.elements.message.value,
+  };
+  fetch("https://form-submit-ndey.onrender.com/", {
+    method: "POST",
 
-  fetch("")
-    .then((res) => res)
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(jsonData),
+  })
+    .then((res) => {
+      return res.json();
+    })
     .then((data) => {
-      console.log("Name:", name);
-      console.log("Email:", email);
-      console.log("Message:", message);
-      console.log(data);
+      document.getElementById("fromSubmitResponse").innerHTML =
+        "submitted successfully, you will recived the mail ";
+      e.target.elements.name.value = "";
+      e.target.elements.email.value = "";
+      e.target.elements.message.value = "";
     })
     .catch((err) => {
-      console.log("errrrr===", err);
+      console.log(err);
+
+      document.getElementById("fromSubmitResponse").innerHTML =
+        "Some Error!! not submitted";
+    })
+    .finally(() => {
+      document.getElementById("loader").style.display = "none";
+      document.getElementsByClassName("form")[0].style.opacity = 1;
     });
 });
