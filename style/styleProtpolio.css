@@ -13,7 +13,7 @@
 }
 .card {
   overflow: visible;
-  min-width: 270px;
+  min-width: 260px;
   height: 254px;
 }
 
@@ -51,29 +51,16 @@
   position: absolute;
   content: " ";
   display: block;
-  width: 160px;
-  height: 160%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    #f73505,
-    #333,
-    #333,
-    #333,
-    #30e930,
-    #333,
-    #333,
-    #333,
-    #0d09e6,
-    transparent
-  );
-  animation: rotation_481 15s infinite linear;
+  width: 1000px;
+  height: 500%;
+  background: linear-gradient(90deg, #ff2233, #0d09e6, #30e930, #ff2233);
+  animation: color_card_border_rotation 2s infinite linear;
 }
 
 .back-content {
   position: absolute;
-  width: 99%;
-  height: 99%;
+  width: 95%;
+  height: 95%;
   background-color: #151515;
   border-radius: 5px;
   color: white;
@@ -88,7 +75,7 @@
   transform: rotateY(180deg);
 }
 
-@keyframes rotation_481 {
+@keyframes color_card_border_rotation {
   0% {
     transform: rotateZ(0deg);
   }
@@ -147,42 +134,6 @@
   font-size: 8px;
 }
 
-.front .img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.circle {
-  width: 190px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: #ff7a66;
-  position: relative;
-  filter: blur(15px);
-  animation: floating 2600ms infinite linear;
-}
-
-#bottom {
-  background-color: #7366ff;
-  left: 50px;
-  top: 0px;
-  width: 200px;
-  height: 100px;
-  animation-delay: -800ms;
-}
-
-#right {
-  background-color: #ff2233;
-  left: 160px;
-  top: -80px;
-  width: 30px;
-  height: 30px;
-  animation-delay: -1800ms;
-}
-
 @keyframes floating {
   0% {
     transform: translateY(0px);
@@ -214,57 +165,4 @@
   div.protpolioCradContainer .card {
     max-width: 100px;
   }
-}
-
-/* <div class="mycard">
-          <div class="cardsideRound">
-            <div class="textContain">
-              hello
-            </div>
-          </div>
-        </div> */
-
-.mycard {
-  width: 100px;
-  height: 200px;
-  /* transform-style: preserve-3d; */
-  transition: transform 1s;
-  border: 1px solid #ffff;
-  position: relative;
-  overflow: hidden;
-}
-
-.cardsideRound {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.cardsideRound::before {
-  width: 250%;
-  height: 150%;
-  border: 1px solid;
-  content: "kkkk";
-  position: absolute;
-  color: #ffff;
-  background: linear-gradient(90deg, #ff2233, #0d09e6, #30e930);
-  animation: rotate 5s infinite linear;
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotateZ(0deg);
-  }
-  0% {
-    transform: rotateZ(360deg);
-  }
-}
-.textContain {
-  width: 90%;
-  height: 95%;
-  background-color: #30e930;
-  position: absolute;
 }

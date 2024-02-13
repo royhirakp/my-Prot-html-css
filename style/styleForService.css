@@ -15,54 +15,51 @@ div#Service main {
 div.serviceCardContainer {
   max-width: 300px;
   height: 210px;
-  background-color: #4158d0;
+  background-color: #a6acc9;
   background-image: linear-gradient(
-    40deg,
-    #334ec5 0%,
-    #be3833 46%,
-    #a36b04 100%
+    /* 180deg, */ #2a50e7 10%,
+    #250706 46%,
+    #6164e3 100%
   );
   border-radius: 8px;
   color: white;
   overflow: hidden;
   position: relative;
-  transform-style: preserve-3d;
   perspective: 1000px;
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
-
+div.serviceCardContainer:hover {
+  background-image: linear-gradient(
+    /* 180deg, */ #0b0d17 10%,
+    #0f27ff 46%,
+    #0b0b1f 100%
+  );
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
 div.serviceCardContainer div {
   padding: 20px;
   position: relative;
   z-index: 1;
-  /* display: flex; */
+  display: flex;
   flex-direction: column;
   gap: 10px;
   color: white;
-  align-items: center;
-  justify-content: space-between;
   text-align: center;
   height: 100%;
 }
 
 div.serviceCardContainer div h2 {
-  /* font-size: 20px; */
-  /* font-weight: 700; */
-  /* color: inherit; */
   text-transform: uppercase;
 }
 
 div.serviceCardContainer div p {
-  /* color: inherit; */
   line-height: 25px;
-  opacity: 0.7;
   font-size: 19px;
-}
-
-div.serviceCardContainer:hover {
-  transform: rotateY(10deg) rotateX(10deg) scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  color: #f9e910;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 400px) {
