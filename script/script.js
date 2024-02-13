@@ -230,3 +230,150 @@ document.getElementsByClassName("form")[0].addEventListener("submit", (e) => {
       document.getElementsByClassName("form")[0].style.opacity = 1;
     });
 });
+
+///logic for add poject card in the web page
+
+let projectData = [
+  {
+    extra: false,
+    title: "Shopping app  <br>(full-stack)",
+    imageUrl: "hotailBookingApp.png",
+    technologies:
+      " Next.js, Redux Toolkit, Material-UI, Nest.js, MongoDB, and TypeScript.",
+    githubFrontend: "https://github.com/royhirakp/hotel-booking-appp-nextjs",
+    githubBackend: "https://github.com/royhirakp/hotel-Booking-backend-nestjs",
+    hostingLink: "https://hotel-booking-appp-nextjs.vercel.app/webapp/Home",
+  },
+  {
+    extra: false,
+    title: "UI Layouts",
+    imageUrl: "layoutproject.png",
+    technologies: "Next.js, , Material-UI, Tailwind css",
+    githubFrontend: "https://github.com/royhirakp/layouts_main",
+    // githubBackend: "https://github.com/royhirakp/hotel-Booking-backend-nestjs",
+    hostingLink: "https://layouts-main.vercel.app/",
+  },
+  {
+    extra: false,
+    title: "UI Layouts",
+    imageUrl: "layoutproject.png",
+    technologies: "Next.js, , Material-UI, Tailwind css",
+    githubFrontend: "https://github.com/royhirakp/layouts_main",
+    // githubBackend: "https://github.com/royhirakp/hotel-Booking-backend-nestjs",
+    hostingLink: "https://layouts-main.vercel.app/",
+  },
+];
+
+let addProjectFunction = (item, i) => {
+  console.log(item.extra, item.title);
+  var newChild1 = document.createElement("div");
+  newChild1.className = `card ${item.extra ? "extraProjectCard" : ""}`;
+  newChild1.innerHTML = `
+  <div class="content">
+  <div class="back">
+    <div class="back-content">
+      <div
+      class="projectBgImageContainer"
+        style="
+          background: url(photos/${item.imageUrl});
+          background-repeat: no-repeat;
+          background-size: cover;
+          "
+      >
+        <h4>
+          ${item.title}
+       </h4>
+      </div>
+    </div>
+  </div>
+  <div class="front">
+
+    <div class="frontContaint" >
+      <p>
+        <strong >Technologies:</strong>                
+      </p>
+      <p class="listOfTecnologies">
+       ${item.technologies}
+      </p>
+      <div>
+        <section class="projectLinks" >
+          <div class="IconContainerr" >
+            <img src="photos/github-142-svgrepo-com (1).svg" alt="" />
+          </div>
+          <div class="githublinkContainer" >
+            <a style="display:${
+              item.githubFrontend ? "block" : "none"
+            }" target="_blank" 
+            href="${item.githubFrontend}" 
+              title="github link for frontend">
+             Ui
+            </a>
+            <a  target="_blank"
+            
+            style="display:${item.githubBackend ? "block" : "none"}"
+            
+            
+            href="${item.githubBackend}" title="github link for backend">
+              Backend
+            </a>
+          </div>                
+        </section>              
+      </div>
+      <a  target="_blank" href="${item.hostingLink}" class="projectDeployLink" >
+        Deploy link
+      </a>
+    </div>
+  </div>
+</div>
+  
+  `;
+  parentDiv.appendChild(newChild1);
+};
+var parentDiv = document.querySelector(".protpolioCradContainer");
+
+projectData.map(addProjectFunction);
+
+//see more button logic
+let extraProjectData = [
+  {
+    extra: true,
+    title: "extraaa",
+    imageUrl: "hotailBookingApp.png",
+    technologies:
+      " Next.js, Redux Toolkit, Material-UI, Nest.js, MongoDB, and TypeScript.",
+    githubFrontend: "https://github.com/royhirakp/hotel-booking-appp-nextjs",
+    githubBackend: "https://github.com/royhirakp/hotel-Booking-backend-nestjs",
+    hostingLink: "https://hotel-booking-appp-nextjs.vercel.app/webapp/Home",
+  },
+  {
+    extra: true,
+    title: "UI Layouts",
+    imageUrl: "layoutproject.png",
+    technologies: "Next.js, , Material-UI, Tailwind css",
+    githubFrontend: "https://github.com/royhirakp/layouts_main",
+    hostingLink: "https://layouts-main.vercel.app/",
+  },
+];
+
+extraProjectData.map(addProjectFunction);
+let seeMoreButton = document.getElementById("seeMoreButton");
+let buttonStatus = false;
+
+seeMoreButton.addEventListener("click", () => {
+  var divsToToggle = document.querySelectorAll(".extraProjectCard");
+  console.log(divsToToggle);
+
+  if (!buttonStatus) {
+    seeMoreButton.innerHTML = `See less`;
+    buttonStatus = true;
+    divsToToggle.forEach(function (div) {
+      div.style.display = "block";
+    });
+  } else {
+    seeMoreButton.innerHTML = `See more`;
+    buttonStatus = false;
+    divsToToggle.forEach(function (div) {
+      div.style.display = "none";
+    });
+  }
+});
