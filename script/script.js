@@ -236,7 +236,7 @@ document.getElementsByClassName("form")[0].addEventListener("submit", (e) => {
 let projectData = [
   {
     extra: false,
-    title: "Shopping app  <br>(full-stack)",
+    title: "Social app <br>(full-stack)",
     imageUrl: "hotailBookingApp.png",
     technologies:
       " Next.js, Redux Toolkit, Material-UI, Nest.js, MongoDB, and TypeScript.",
@@ -247,7 +247,7 @@ let projectData = [
   {
     extra: false,
     title: "UI Layouts",
-    imageUrl: "layoutproject.png",
+    imageUrl: "layoutproject1.png",
     technologies: "Next.js, , Material-UI, Tailwind css",
     githubFrontend: "https://github.com/royhirakp/layouts_main",
     // githubBackend: "https://github.com/royhirakp/hotel-Booking-backend-nestjs",
@@ -255,12 +255,12 @@ let projectData = [
   },
   {
     extra: false,
-    title: "UI Layouts",
-    imageUrl: "layoutproject.png",
-    technologies: "Next.js, , Material-UI, Tailwind css",
-    githubFrontend: "https://github.com/royhirakp/layouts_main",
+    title: "Html Css Js",
+    imageUrl: ".png",
+    technologies: "Html, Css, Javascript",
+    githubFrontend: "",
     // githubBackend: "https://github.com/royhirakp/hotel-Booking-backend-nestjs",
-    hostingLink: "https://layouts-main.vercel.app/",
+    hostingLink: "",
   },
 ];
 
@@ -338,20 +338,20 @@ let extraProjectData = [
   {
     extra: true,
     title: "extraaa",
-    imageUrl: "hotailBookingApp.png",
-    technologies:
-      " Next.js, Redux Toolkit, Material-UI, Nest.js, MongoDB, and TypeScript.",
-    githubFrontend: "https://github.com/royhirakp/hotel-booking-appp-nextjs",
-    githubBackend: "https://github.com/royhirakp/hotel-Booking-backend-nestjs",
-    hostingLink: "https://hotel-booking-appp-nextjs.vercel.app/webapp/Home",
+    imageUrl: ".png",
+    technologies: " Html cSS JS",
+    githubFrontend: "",
+    githubBackend: "",
+    hostingLink: "",
   },
   {
     extra: true,
-    title: "UI Layouts",
-    imageUrl: "layoutproject.png",
-    technologies: "Next.js, , Material-UI, Tailwind css",
-    githubFrontend: "https://github.com/royhirakp/layouts_main",
-    hostingLink: "https://layouts-main.vercel.app/",
+    title: "extraaa",
+    imageUrl: ".png",
+    technologies: " Html cSS JS",
+    githubFrontend: "",
+    githubBackend: "",
+    hostingLink: "",
   },
 ];
 
