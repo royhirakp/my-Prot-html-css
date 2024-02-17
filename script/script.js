@@ -189,7 +189,7 @@ function openSlider() {
 //   console.log("hdhdhhd");
 // }
 
-console.log(document.getElementsByClassName("form")[0]);
+// console.log(document.getElementsByClassName("form")[0]);
 
 document.getElementsByClassName("form")[0].addEventListener("submit", (e) => {
   e.preventDefault();
@@ -255,17 +255,16 @@ let projectData = [
   },
   {
     extra: false,
-    title: "Html Css Js",
-    imageUrl: ".png",
-    technologies: "Html, Css, Javascript",
-    githubFrontend: "",
-    // githubBackend: "https://github.com/royhirakp/hotel-Booking-backend-nestjs",
-    hostingLink: "",
+    title: "React Redux cart | data show after refresh",
+    imageUrl: "react_redux_data_shw_after_refresh.png",
+    technologies: "Next js, Redux",
+    githubFrontend: "https://github.com/royhirakp/nextJs-redux-shoping-cart",
+    hostingLink: "https://superlative-mooncake-bee048.netlify.app/",
   },
 ];
 
 let addProjectFunction = (item, i) => {
-  console.log(item.extra, item.title);
+  // console.log(item.extra, item.title);
   var newChild1 = document.createElement("div");
   newChild1.className = `card ${item.extra ? "extraProjectCard" : ""}`;
   newChild1.innerHTML = `
@@ -275,12 +274,12 @@ let addProjectFunction = (item, i) => {
       <div
       class="projectBgImageContainer"
         style="
-          background: url(photos/${item.imageUrl});
+          background: url(photos/${item.imageUrl}) center;
           background-repeat: no-repeat;
           background-size: cover;
           "
       >
-        <h4>
+        <h4 style="text-align: center;" >
           ${item.title}
        </h4>
       </div>
@@ -337,21 +336,104 @@ projectData.map(addProjectFunction);
 let extraProjectData = [
   {
     extra: true,
-    title: "extraaa",
-    imageUrl: ".png",
-    technologies: " Html cSS JS",
-    githubFrontend: "",
-    githubBackend: "",
-    hostingLink: "",
+    title: "React task manager (full stack)",
+    imageUrl: "blog_post_react_multer.png",
+    technologies: "REACT, Express js, mongoose, Jwt, bcrypt ",
+    githubBackend: "https://github.com/royhirakp/EXPRESS_Blog_app_multer_curd",
+    githubFrontend: "https://github.com/royhirakp/REACT_Blog_app_multer_curd",
+    hostingLink: "https://main--exquisite-gelato-aa5fe0.netlify.app/",
   },
   {
     extra: true,
-    title: "extraaa",
-    imageUrl: ".png",
-    technologies: " Html cSS JS",
-    githubFrontend: "",
-    githubBackend: "",
-    hostingLink: "",
+    title: "React task manager (full stack)",
+    imageUrl: "taskManagerReact.png",
+    technologies: "REACT, Mui, Express js, mongoose, Jwt,bcrypt ",
+    githubBackend: "https://github.com/royhirakp/Task-Manager-NODEJS",
+
+    githubFrontend: "https://github.com/royhirakp/taskManager-react",
+    hostingLink: "https://sweet-vacherin-ba29c3.netlify.app/",
+  },
+  {
+    extra: true,
+    title: "React_redux query app CURD (fullstack)",
+    imageUrl: "react_redux_query.png",
+    technologies: "REACT, Mui, Express js, Redux query,  mongoose, Jwt,bcrypt ",
+    githubBackend:
+      "https://github.com/royhirakp/EXPRESS_book_app_CURD_redux_query/tree/main",
+
+    githubFrontend:
+      "https://github.com/royhirakp/REACT_book_app_CURD_redux_query",
+    hostingLink: "https://amazing-malasada-10601f.netlify.app/",
+  },
+  {
+    extra: true,
+    title: "React recipe app (fullstack)",
+    imageUrl: "recipi.png",
+    technologies: "REACT, Mui, Express js, Multer,  mongoose, Jwt,bcrypt ",
+    githubBackend:
+      "https://github.com/royhirakp/Express_resipiapp_multer_CURD_auth",
+
+    githubFrontend:
+      "https://github.com/royhirakp/react_resipiapp_multer_CURD_auth",
+    hostingLink: "https://venerable-tiramisu-af3c86.netlify.app/",
+  },
+  {
+    extra: true,
+    title: "React drag and drop",
+    imageUrl: "drag_and_drop.png",
+    technologies: "REACT",
+    githubFrontend: "https://github.com/royhirakp/REACT__drag_drop_component",
+    hostingLink: "https://papaya-scone-d901b5.netlify.app/",
+  },
+  {
+    extra: true,
+    title: "React Redux cart | data show after refresh",
+    imageUrl: "react_redux_data_shw_after_refresh.png",
+    technologies: "Next js, Redux",
+    githubFrontend: "https://github.com/royhirakp/nextJs-redux-shoping-cart",
+    hostingLink: "https://superlative-mooncake-bee048.netlify.app/",
+  },
+  {
+    extra: true,
+    title: "Multi step form by react | redux",
+    imageUrl: "multistep_form.png",
+    technologies: " React , Redux, Material ui",
+    githubFrontend:
+      "https://github.com/royhirakp/multistepForm-redux-metarialUI",
+    hostingLink: "https://delicate-rabanadas-e32f8c.netlify.app/",
+  },
+  {
+    extra: true,
+    title: "Jocks app | get data from a api",
+    imageUrl: "jocksapp.png",
+    technologies: "React",
+    githubFrontend: "https://github.com/royhirakp/jokesAppReact",
+    hostingLink: "https://dancing-bombolone-589bb2.netlify.app/",
+  },
+  {
+    extra: true,
+    title: "React movie search app | get data from a api",
+    imageUrl: "movieSearch_react.png",
+    technologies: "React, external api",
+    githubFrontend: "https://github.com/royhirakp/REACT_movieSearch_app",
+    hostingLink: "https://main--gorgeous-maamoul-3d7bcf.netlify.app/",
+  },
+  {
+    extra: true,
+    title: "React music app",
+    imageUrl: "musicapp_react.png",
+    technologies: "React",
+    githubFrontend: "https://github.com/royhirakp/musicAPP",
+    hostingLink: "https://resonant-melomakarona-7d9007.netlify.app/",
+  },
+  {
+    extra: true,
+    title: "React color change on button click ",
+    imageUrl: "react_colorChage_on_buttonClick.png",
+    technologies: "React",
+    githubFrontend:
+      "https://github.com/royhirakp/REACT_colorChange_by_buttonClick/tree/main",
+    hostingLink: "https://main--polite-blancmange-d54727.netlify.app/",
   },
 ];
 
@@ -361,7 +443,7 @@ let buttonStatus = false;
 
 seeMoreButton.addEventListener("click", () => {
   var divsToToggle = document.querySelectorAll(".extraProjectCard");
-  console.log(divsToToggle);
+  // console.log(divsToToggle);
 
   if (!buttonStatus) {
     seeMoreButton.innerHTML = `See less`;
