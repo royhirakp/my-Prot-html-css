@@ -237,6 +237,7 @@ div.seeMoreButton button {
   display: block;
   color: #f80202;
   border-radius: 6px;
+  cursor: pointer;
 }
 div.seeMoreButton button:hover {
   color: #ffff;

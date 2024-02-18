@@ -234,9 +234,11 @@ document.getElementsByClassName("form")[0].addEventListener("submit", (e) => {
 ///logic for add poject card in the web page
 
 let projectData = [
+  //html projects
+
   {
     extra: false,
-    title: "Social app <br>(full-stack)",
+    title: "Shopping app <br>(full-stack)",
     imageUrl: "hotailBookingApp.png",
     technologies:
       " Next.js, Redux Toolkit, Material-UI, Nest.js, MongoDB, and TypeScript.",
@@ -248,7 +250,7 @@ let projectData = [
     extra: false,
     title: "UI Layouts",
     imageUrl: "layoutproject1.png",
-    technologies: "Next.js, , Material-UI, Tailwind css",
+    technologies: "Next.js, Material-UI, Tailwind css",
     githubFrontend: "https://github.com/royhirakp/layouts_main",
     // githubBackend: "https://github.com/royhirakp/hotel-Booking-backend-nestjs",
     hostingLink: "https://layouts-main.vercel.app/",
@@ -334,6 +336,7 @@ projectData.map(addProjectFunction);
 
 //see more button logic
 let extraProjectData = [
+  //react projects
   {
     extra: true,
     title: "React task manager (full stack)",
@@ -434,6 +437,93 @@ let extraProjectData = [
     githubFrontend:
       "https://github.com/royhirakp/REACT_colorChange_by_buttonClick/tree/main",
     hostingLink: "https://main--polite-blancmange-d54727.netlify.app/",
+  },
+  //html css projects
+  {
+    extra: true,
+    title: "Drag, resize, change background color | HTML CSS JAVASCRIPT",
+    imageUrl: "drag_resize_div.png",
+    technologies: "HTML, CSS , JAVASCRIPT",
+    githubFrontend: "https://github.com/royhirakp/HTML_CSS_JS_Drag_resize_div",
+    hostingLink: "https://royhirakp.github.io/HTML_CSS_JS_Drag_resize_div/",
+  },
+  {
+    extra: true,
+    title: "Color picker | show upload image | HTML CSS JAVASCRIPT",
+    imageUrl: "colorPicker.png",
+    technologies: "HTML, CSS , JAVASCRIPT",
+    githubFrontend:
+      "https://github.com/royhirakp/HTML_CSS_JS_colorPicker_dispayimge",
+    hostingLink:
+      "https://royhirakp.github.io/HTML_CSS_JS_colorPicker_dispayimge/",
+  },
+  {
+    extra: true,
+    title: "Calculator | HTML CSS JAVASCRIPT",
+    imageUrl: "calculator.png",
+    technologies: "HTML, CSS , JAVASCRIPT",
+    githubFrontend: "https://github.com/royhirakp/HTML_css_js_Calculator",
+    hostingLink: "https://royhirakp.github.io/HTML_css_js_Calculator/",
+  },
+  {
+    extra: true,
+    title: "HTML CSS card design",
+    imageUrl: "htmlCardDesing.png",
+    technologies: "HTML, CSS",
+    githubFrontend:
+      "https://github.com/royhirakp/html_css_responsive_exampleCard/",
+    hostingLink: "https://royhirakp.github.io/html_css_responsive_exampleCard/",
+  },
+  {
+    extra: true,
+    title: "HTML CSS responsive design",
+    imageUrl: "htmlCssPageDesing.png",
+    technologies: "HTML, CSS",
+    githubFrontend: "https://github.com/royhirakp/HTML_CSS_responsive_Desing",
+    hostingLink: "https://royhirakp.github.io/HTML_CSS_responsive_Desing/",
+  },
+  {
+    extra: true,
+    title: "HTML Bootstrap form design",
+    imageUrl: "bootstarpFromdesing.png",
+    technologies: "HTML, Bootstrap",
+    githubFrontend: "https://github.com/royhirakp/html_bootstrap_form_Desing",
+    hostingLink: "https://royhirakp.github.io/html_bootstrap_form_Desing/",
+  },
+  {
+    extra: true,
+    title: "HTML CSS form design",
+    imageUrl: "htmlFormDesing.png",
+    technologies: "HTML, CSS",
+    githubFrontend:
+      "https://github.com/royhirakp/HTML_Form_card_responsive_desing",
+    hostingLink:
+      "https://royhirakp.github.io/HTML_Form_card_responsive_desing/",
+  },
+  {
+    extra: true,
+    title: "Weight converter | HTML CSS JS ",
+    imageUrl: "waight_converter.png",
+    technologies: "HTML, CSS , Javascript",
+    githubFrontend: "https://github.com/royhirakp/HTML_weight_converter",
+    hostingLink: "https://royhirakp.github.io/HTML_weight_converter/",
+  },
+  {
+    extra: true,
+    title: "Stopwatch  | HTML CSS JS ",
+    imageUrl: "stopwatch.png",
+    technologies: "HTML, CSS , Javascript",
+    githubFrontend: "https://github.com/royhirakp/HTML_css_js_stopwatch",
+    hostingLink: "https://royhirakp.github.io/HTML_css_js_stopwatch/",
+  },
+  {
+    extra: true,
+    title: "Payment process | HTML CSS JS ",
+    imageUrl: "payment_process_card.png",
+    technologies: "HTML, CSS ,Javascript",
+    githubFrontend:
+      "https://github.com/royhirakp/HTML_css_payment_process_by_js",
+    hostingLink: "https://royhirakp.github.io/HTML_css_payment_process_by_js/",
   },
 ];
 
