@@ -238,7 +238,7 @@ let projectData = [
 
   {
     extra: false,
-    title: "Shopping app <br>(full-stack)",
+    title: "FULLSTACK | Shopping app | Next js, Nestjs, redux, Material ui  ",
     imageUrl: "hotailBookingApp.png",
     technologies:
       " Next.js, Redux Toolkit, Material-UI, Nest.js, MongoDB, and TypeScript.",
@@ -248,18 +248,20 @@ let projectData = [
   },
   {
     extra: false,
-    title: "UI Layouts",
+    title: "Layouts | Different types of responsive layout design",
     imageUrl: "layoutproject1.png",
-    technologies: "Next.js, Material-UI, Tailwind css",
+    technologies:
+      "Next.js,TypeScript, Material-UI , Tailwind css, swiper, react-hook-form",
     githubFrontend: "https://github.com/royhirakp/layouts_main",
     // githubBackend: "https://github.com/royhirakp/hotel-Booking-backend-nestjs",
     hostingLink: "https://layouts-main.vercel.app/",
   },
   {
     extra: false,
-    title: "React Redux cart | data show after refresh",
+    title:
+      "NextJs, redux-persist | added product remains in cart after page refresh",
     imageUrl: "react_redux_data_shw_after_refresh.png",
-    technologies: "Next js, Redux",
+    technologies: "Next js, redux-persist",
     githubFrontend: "https://github.com/royhirakp/nextJs-redux-shoping-cart",
     hostingLink: "https://superlative-mooncake-bee048.netlify.app/",
   },
@@ -339,28 +341,10 @@ let extraProjectData = [
   //react projects
   {
     extra: true,
-    title: "React task manager (full stack)",
-    imageUrl: "blog_post_react_multer.png",
-    technologies: "REACT, Express js, mongoose, Jwt, bcrypt ",
-    githubBackend: "https://github.com/royhirakp/EXPRESS_Blog_app_multer_curd",
-    githubFrontend: "https://github.com/royhirakp/REACT_Blog_app_multer_curd",
-    hostingLink: "https://main--exquisite-gelato-aa5fe0.netlify.app/",
-  },
-  {
-    extra: true,
-    title: "React task manager (full stack)",
-    imageUrl: "taskManagerReact.png",
-    technologies: "REACT, Mui, Express js, mongoose, Jwt,bcrypt ",
-    githubBackend: "https://github.com/royhirakp/Task-Manager-NODEJS",
-
-    githubFrontend: "https://github.com/royhirakp/taskManager-react",
-    hostingLink: "https://sweet-vacherin-ba29c3.netlify.app/",
-  },
-  {
-    extra: true,
-    title: "React_redux query app CURD (fullstack)",
+    title: "FULLSTACK | Book app | api call by redux RTK query | auth",
     imageUrl: "react_redux_query.png",
-    technologies: "REACT, Mui, Express js, Redux query,  mongoose, Jwt,bcrypt ",
+    technologies:
+      "REACT, Redux query, Mui, Express js,  mongoose, Jwt , bcrypt ",
     githubBackend:
       "https://github.com/royhirakp/EXPRESS_book_app_CURD_redux_query/tree/main",
 
@@ -368,11 +352,31 @@ let extraProjectData = [
       "https://github.com/royhirakp/REACT_book_app_CURD_redux_query",
     hostingLink: "https://amazing-malasada-10601f.netlify.app/",
   },
+  // {
+  //   extra: true,
+  //   title: "React task manager1 (full stack)",
+  //   imageUrl: "blog_post_react_multer.png",
+  //   technologies: "REACT, Express js, mongoose, Jwt, bcrypt, multer ",
+  //   githubBackend: "https://github.com/royhirakp/EXPRESS_Blog_app_multer_curd",
+  //   githubFrontend: "https://github.com/royhirakp/REACT_Blog_app_multer_curd",
+  //   hostingLink: "https://main--exquisite-gelato-aa5fe0.netlify.app/",
+  // },
   {
     extra: true,
-    title: "React recipe app (fullstack)",
+    title: "BACKEND | Task manager | auth, CURD in NoSQL Database",
+    imageUrl: "taskManagerReact.png",
+    technologies: "REACT, Mui, Express js, mongoose, Jwt, bcrypt",
+    githubBackend: "https://github.com/royhirakp/Task-Manager-NODEJS",
+
+    githubFrontend: "https://github.com/royhirakp/taskManager-react",
+    hostingLink: "https://sweet-vacherin-ba29c3.netlify.app/",
+  },
+
+  {
+    extra: true,
+    title: "BACKEND | React recipe app | auth, multer upload | filter data",
     imageUrl: "recipi.png",
-    technologies: "REACT, Mui, Express js, Multer,  mongoose, Jwt,bcrypt ",
+    technologies: "REACT, Mui, Express js, Multer, mongoose, Jwt, bcrypt ",
     githubBackend:
       "https://github.com/royhirakp/Express_resipiapp_multer_CURD_auth",
 
@@ -382,23 +386,111 @@ let extraProjectData = [
   },
   {
     extra: true,
-    title: "React drag and drop",
+    title:
+      "React MUSIC APP | play, pause  | volume up, down | next, prev song | click to play",
+    imageUrl: "musicapp_react.png",
+    technologies: "REACT",
+    githubFrontend: "https://github.com/royhirakp/musicAPP",
+    hostingLink: "https://resonant-melomakarona-7d9007.netlify.app/",
+  },
+  {
+    extra: true,
+    title: "Integration | React movie search app | get data from a api",
+    imageUrl: "movieSearch_react.png",
+    technologies: "React, external api",
+    githubFrontend: "https://github.com/royhirakp/REACT_movieSearch_app",
+    hostingLink: "https://main--gorgeous-maamoul-3d7bcf.netlify.app/",
+  },
+  {
+    extra: true,
+    title: "Javascript Logic | Weight converter | HTML CSS JS ",
+    imageUrl: "waight_converter.png",
+    technologies: "HTML, CSS , Javascript",
+    githubFrontend: "https://github.com/royhirakp/HTML_weight_converter",
+    hostingLink: "https://royhirakp.github.io/HTML_weight_converter/",
+  },
+  {
+    extra: true,
+    title: "Javascript Logic | Stopwatch  | HTML CSS JS ",
+    imageUrl: "stopwatch.png",
+    technologies: "HTML, CSS , Javascript",
+    githubFrontend: "https://github.com/royhirakp/HTML_css_js_stopwatch",
+    hostingLink: "https://royhirakp.github.io/HTML_css_js_stopwatch/",
+  },
+  {
+    extra: true,
+    title: "Javascript Logic | Calculator | HTML CSS JAVASCRIPT",
+    imageUrl: "calculator.png",
+    technologies: "HTML, CSS , JAVASCRIPT",
+    githubFrontend: "https://github.com/royhirakp/HTML_css_js_Calculator",
+    hostingLink: "https://royhirakp.github.io/HTML_css_js_Calculator/",
+  },
+  {
+    extra: true,
+    title: "Design | HTML CSS responsive product card",
+    imageUrl: "htmlCardDesing.png",
+    technologies: "HTML, CSS",
+    githubFrontend:
+      "https://github.com/royhirakp/html_css_responsive_exampleCard/",
+    hostingLink: "https://royhirakp.github.io/html_css_responsive_exampleCard/",
+  },
+  {
+    extra: true,
+    title: "Design | HTML CSS responsive design",
+    imageUrl: "htmlCssPageDesing.png",
+    technologies: "HTML, CSS",
+    githubFrontend: "https://github.com/royhirakp/HTML_CSS_responsive_Desing",
+    hostingLink: "https://royhirakp.github.io/HTML_CSS_responsive_Desing/",
+  },
+  // {
+  //   extra: true,
+  //   title: "HTML Bootstrap form design",
+  //   imageUrl: "bootstarpFromdesing.png",
+  //   technologies: "HTML, Bootstrap",
+  //   githubFrontend: "https://github.com/royhirakp/html_bootstrap_form_Desing",
+  //   hostingLink: "https://royhirakp.github.io/html_bootstrap_form_Desing/",
+  // },
+  {
+    extra: true,
+    title: "Design | HTML CSS responsive form design",
+    imageUrl: "htmlFormDesing.png",
+    technologies: "HTML, CSS",
+    githubFrontend:
+      "https://github.com/royhirakp/HTML_Form_card_responsive_desing",
+    hostingLink:
+      "https://royhirakp.github.io/HTML_Form_card_responsive_desing/",
+  },
+
+  {
+    extra: true,
+    title: "Design | Payment process by javascript logic | HTML CSS JS",
+    imageUrl: "payment_process_card.png",
+    technologies: "HTML, CSS ,Javascript",
+    githubFrontend:
+      "https://github.com/royhirakp/HTML_css_payment_process_by_js",
+    hostingLink: "https://royhirakp.github.io/HTML_css_payment_process_by_js/",
+  },
+
+  {
+    extra: true,
+    title: "Integration | Jocks app | get data from a api, bookmark data",
+    imageUrl: "jocksapp.png",
+    technologies: "React",
+    githubFrontend: "https://github.com/royhirakp/jokesAppReact",
+    hostingLink: "https://dancing-bombolone-589bb2.netlify.app/",
+  },
+  {
+    extra: true,
+    title: "Features | React drag and drop",
     imageUrl: "drag_and_drop.png",
     technologies: "REACT",
     githubFrontend: "https://github.com/royhirakp/REACT__drag_drop_component",
     hostingLink: "https://papaya-scone-d901b5.netlify.app/",
   },
+
   {
     extra: true,
-    title: "React Redux cart | data show after refresh",
-    imageUrl: "react_redux_data_shw_after_refresh.png",
-    technologies: "Next js, Redux",
-    githubFrontend: "https://github.com/royhirakp/nextJs-redux-shoping-cart",
-    hostingLink: "https://superlative-mooncake-bee048.netlify.app/",
-  },
-  {
-    extra: true,
-    title: "Multi step form by react | redux",
+    title: "Features | Multi step form by react, redux",
     imageUrl: "multistep_form.png",
     technologies: " React , Redux, Material ui",
     githubFrontend:
@@ -407,31 +499,7 @@ let extraProjectData = [
   },
   {
     extra: true,
-    title: "Jocks app | get data from a api",
-    imageUrl: "jocksapp.png",
-    technologies: "React",
-    githubFrontend: "https://github.com/royhirakp/jokesAppReact",
-    hostingLink: "https://dancing-bombolone-589bb2.netlify.app/",
-  },
-  {
-    extra: true,
-    title: "React movie search app | get data from a api",
-    imageUrl: "movieSearch_react.png",
-    technologies: "React, external api",
-    githubFrontend: "https://github.com/royhirakp/REACT_movieSearch_app",
-    hostingLink: "https://main--gorgeous-maamoul-3d7bcf.netlify.app/",
-  },
-  {
-    extra: true,
-    title: "React music app",
-    imageUrl: "musicapp_react.png",
-    technologies: "React",
-    githubFrontend: "https://github.com/royhirakp/musicAPP",
-    hostingLink: "https://resonant-melomakarona-7d9007.netlify.app/",
-  },
-  {
-    extra: true,
-    title: "React color change on button click ",
+    title: "Features | React color change on button click ",
     imageUrl: "react_colorChage_on_buttonClick.png",
     technologies: "React",
     githubFrontend:
@@ -441,7 +509,8 @@ let extraProjectData = [
   //html css projects
   {
     extra: true,
-    title: "Drag, resize, change background color | HTML CSS JAVASCRIPT",
+    title:
+      "Features | Drag, resize, change background color | HTML CSS JAVASCRIPT",
     imageUrl: "drag_resize_div.png",
     technologies: "HTML, CSS , JAVASCRIPT",
     githubFrontend: "https://github.com/royhirakp/HTML_CSS_JS_Drag_resize_div",
@@ -449,81 +518,14 @@ let extraProjectData = [
   },
   {
     extra: true,
-    title: "Color picker | show upload image | HTML CSS JAVASCRIPT",
+    title:
+      "Features | Color picker, preview upload image | HTML CSS JAVASCRIPT",
     imageUrl: "colorPicker.png",
     technologies: "HTML, CSS , JAVASCRIPT",
     githubFrontend:
       "https://github.com/royhirakp/HTML_CSS_JS_colorPicker_dispayimge",
     hostingLink:
       "https://royhirakp.github.io/HTML_CSS_JS_colorPicker_dispayimge/",
-  },
-  {
-    extra: true,
-    title: "Calculator | HTML CSS JAVASCRIPT",
-    imageUrl: "calculator.png",
-    technologies: "HTML, CSS , JAVASCRIPT",
-    githubFrontend: "https://github.com/royhirakp/HTML_css_js_Calculator",
-    hostingLink: "https://royhirakp.github.io/HTML_css_js_Calculator/",
-  },
-  {
-    extra: true,
-    title: "HTML CSS card design",
-    imageUrl: "htmlCardDesing.png",
-    technologies: "HTML, CSS",
-    githubFrontend:
-      "https://github.com/royhirakp/html_css_responsive_exampleCard/",
-    hostingLink: "https://royhirakp.github.io/html_css_responsive_exampleCard/",
-  },
-  {
-    extra: true,
-    title: "HTML CSS responsive design",
-    imageUrl: "htmlCssPageDesing.png",
-    technologies: "HTML, CSS",
-    githubFrontend: "https://github.com/royhirakp/HTML_CSS_responsive_Desing",
-    hostingLink: "https://royhirakp.github.io/HTML_CSS_responsive_Desing/",
-  },
-  {
-    extra: true,
-    title: "HTML Bootstrap form design",
-    imageUrl: "bootstarpFromdesing.png",
-    technologies: "HTML, Bootstrap",
-    githubFrontend: "https://github.com/royhirakp/html_bootstrap_form_Desing",
-    hostingLink: "https://royhirakp.github.io/html_bootstrap_form_Desing/",
-  },
-  {
-    extra: true,
-    title: "HTML CSS form design",
-    imageUrl: "htmlFormDesing.png",
-    technologies: "HTML, CSS",
-    githubFrontend:
-      "https://github.com/royhirakp/HTML_Form_card_responsive_desing",
-    hostingLink:
-      "https://royhirakp.github.io/HTML_Form_card_responsive_desing/",
-  },
-  {
-    extra: true,
-    title: "Weight converter | HTML CSS JS ",
-    imageUrl: "waight_converter.png",
-    technologies: "HTML, CSS , Javascript",
-    githubFrontend: "https://github.com/royhirakp/HTML_weight_converter",
-    hostingLink: "https://royhirakp.github.io/HTML_weight_converter/",
-  },
-  {
-    extra: true,
-    title: "Stopwatch  | HTML CSS JS ",
-    imageUrl: "stopwatch.png",
-    technologies: "HTML, CSS , Javascript",
-    githubFrontend: "https://github.com/royhirakp/HTML_css_js_stopwatch",
-    hostingLink: "https://royhirakp.github.io/HTML_css_js_stopwatch/",
-  },
-  {
-    extra: true,
-    title: "Payment process | HTML CSS JS ",
-    imageUrl: "payment_process_card.png",
-    technologies: "HTML, CSS ,Javascript",
-    githubFrontend:
-      "https://github.com/royhirakp/HTML_css_payment_process_by_js",
-    hostingLink: "https://royhirakp.github.io/HTML_css_payment_process_by_js/",
   },
 ];
 
