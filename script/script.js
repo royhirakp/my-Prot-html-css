@@ -244,7 +244,7 @@ let projectData = [
       " Next.js, Redux Toolkit, Material-UI, Nest.js, MongoDB, and TypeScript.",
     githubFrontend: "https://github.com/royhirakp/hotel-booking-appp-nextjs",
     githubBackend: "https://github.com/royhirakp/hotel-Booking-backend-nestjs",
-    hostingLink: "https://hotel-booking-appp-nextjs.vercel.app/webapp/Home",
+    hostingLink: "https://hotel-booking-appp-nextjs.vercel.app/login",
   },
   {
     extra: false,
